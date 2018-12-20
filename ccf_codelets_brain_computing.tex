@@ -1,0 +1,88 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.20 of 2017/10/04
+%
+\documentclass[runningheads]{llncs}
+%
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{wrapfig} % Added by Sid to wrap figure around text
+\usepackage{hyperref} % added by Sid for hyperlinks 
+
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following line
+% to display URLs in blue roman font according to Springer's eBook style:
+% \renewcommand\UrlFont{\color{blue}\rmfamily}
+
+\begin{document}
+%
+\title{Toward A High-Performance Emulation Platform for Brian-Inspired Intelligent Systems \\ Exploring Dataflow-Based Execution Model and Beyond}
+%
+%\titlerunning{Abbreviated paper title}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+%\author{Sihan Zeng\inst{1} \and
+%Jośe Monsalve \inst{2} \and
+%Siddhisanket Raskar\inst{2}}
+%
+\author{Sihan Zeng 
+\and Siddhisanket Raskar
+\and Jose Monsśalve }
+
+\institute{Carnegie Mellon University \and Univeristy of Delaware}
+
+%\authorrunning{Zeng et al.}
+% First names are abbreviated in the running head.
+% If there are more than two authors, 'et al.' is used.
+%
+%\institute{Carnegie Mellon University \and
+%Univeristy of Delaware \\
+%\email{sihanzen@andrew.cmu.edu\inst{1} \and josem@udel.edu\inst{2} %\and sraskar@udel.edu\inst{2}}}
+%
+
+\maketitle              % typeset the header of the contribution
+%
+\begin{abstract}
+Brain inspired computing is a novel computing technology based on neural morphological engineering, which draw lessons from methods of human brain information processing and storage. Combining with the high-performance computing (HPC) platform, they constitute the foundation of general artificial intelligence. However, current brain HPC platforms generally suffer from slow speed, poor scalability and high energy consumption, which severely restrain the potential of brain inspired computing and circumscribe the development of general artificial intelligence. To solve these problems, dataflow model was first proposed in 1970s, providing a novel idea for the development of HPC. In addition, the dataflow model shares similar information processing mechanism with human neural system, which makes the dataflow model naturally suit the emulation of brain-inspired computing. Based on the contemporary progress of dataflow model, the Codelet model was proposed. Through the fine-grained asynchronous program execution and resource allocation, the Codelet model successfully realized the distributed computing on the heterogeneous system, effectively improved the computing power and speed, and open up a new path to overcome the shortcomings of the existing high-performance computing technology.
+Therefore, based on the Codelet model, we propose a dataflow-based emulation platform, aiming at providing high performance computing technology support for general brain-inspired intelligent system, as well as using the characteristics of dataflow model to fully explore the potential of brain-inspired intelligence. As an example, we will select a convolutional neural network (LeNet5) that already has a spectacular user base to initially verify the superiority and feasibility of our proposal.
+
+
+\keywords{First keyword  \and Second keyword \and Another keyword.}
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+\input{tex/Intro}
+
+\section{Related Work}
+\label{sec:related}
+\input{tex/Related}
+
+\section{The Codelet Model}
+\label{sec:model}
+\input{tex/Model}
+
+\section{Methodology}
+\label{sec:method}
+\input{tex/Methodology}
+
+\section{System Setup}
+\label{sec:system}
+\input{tex/System}
+
+\section{Experiments and Results}
+\label{sec:results}
+\input{tex/Results}
+
+\section{Conclusions}
+\label{sec:conclusions}
+\input{tex/Conclusions}
+
+{\footnotesize \large
+\bibliographystyle{abbrvnat}
+\bibliography{bib/capsl,bib/others,bib/fsharp,bib/referencesUCI,bib/my_ref,bib/referencesUD}}
+
+\end{document}

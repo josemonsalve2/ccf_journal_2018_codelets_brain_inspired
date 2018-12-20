@@ -1,0 +1,8 @@
+Since DARTS only supports single-node computing systems, we integrate DARTS with Tensorflow to extend our platform to distributed computing systems. Figure 9 shows a schematic diagram of the DARTS-Tensorflow system. We embed the DARTS runtime system into Tensorflow's runtime system. For distributed systems, Tensorflow allocates computation tasks to each Node, and then DARTS is responsible for the internal computing work of each node.
+
+%\textcolor{red}{Figure}
+\begin{figure}[h]
+\caption{Figure 9}
+\centering
+\includegraphics[width=1\textwidth]{Fig/figure9.png}
+\end{figure}
